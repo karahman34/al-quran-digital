@@ -1,7 +1,10 @@
+import Search from 'components/Search/Search'
+
 function Home() {
   return (
-    <div className="p-10 rounded-xl bg-white w-60">
-      <h2>Home</h2>
+    <div>
+      {/* Search */}
+      <Search />
     </div>
   )
 }

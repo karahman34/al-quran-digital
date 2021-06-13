@@ -1,12 +1,16 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import routes from 'routes/index'
 import Tasks from 'components/Tasks/Tasks'
+import Header from 'components/Header/Header'
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <section className="bg-green-50 h-screen w-screen">
+      <div className="App bg-green-50 h-screen w-screen">
+        <section className="container mx-auto px-3 md:px-0">
+          {/* Header */}
+          <Header />
+
           <Tasks>
             <Switch>
               {routes.map((route, index) => (
