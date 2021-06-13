@@ -7,8 +7,8 @@ function Search() {
       {/* Input */}
       <input
         type="text"
-        className="px-3 pl-10 py-2 w-full text-lg rounded-md focus:outline-none focus:ring focus:ring-green-500 transition-all"
-        placeholder="Cari surat.."
+        className="px-3 pl-10 py-2 w-full md:text-lg rounded-md focus:outline-none focus:ring focus:ring-green-500 transition-all"
+        placeholder="Masukan nama surat.."
       />
     </div>
   )
