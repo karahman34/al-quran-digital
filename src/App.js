@@ -6,7 +6,7 @@ import Header from 'components/Header/Header'
 function App() {
   return (
     <Router>
-      <div className="App bg-green-50 h-screen w-screen">
+      <div className="App bg-green-50 w-full min-h-screen">
         <section className="container mx-auto px-3 md:px-0">
           {/* Header */}
           <Header />
