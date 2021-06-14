@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 function Search() {
+  const { t } = useTranslation()
+
   return (
     <div className="relative w-full md:w-3/5 mx-auto">
       {/* Icon */}
@@ -8,7 +12,7 @@ function Search() {
       <input
         type="text"
         className="px-3 pl-10 py-2 w-full md:text-lg rounded-md focus:outline-none focus:ring focus:ring-green-500 transition-all"
-        placeholder="Masukan nama surat.."
+        placeholder={t('c.search.placeholder')}
       />
     </div>
   )

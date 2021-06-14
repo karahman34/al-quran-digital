@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
 
 const mapStateToProps = (state) => ({
@@ -8,6 +9,8 @@ const mapStateToProps = (state) => ({
 })
 
 function Surah({ surah, lang }) {
+  const { t } = useTranslation()
+
   const [tafsir] = useState(
     surah.tafsir[lang] ? surah.tafsir[lang] : surah.tafsir['id']
   )
@@ -31,7 +34,9 @@ function Surah({ surah, lang }) {
         <p>Transliteration: </p>
         <div className="name mr-2 text-gray-500">
           <span>{surah.name.transliteration[lang]}</span>
-          <span className="ml-1">({surah.numberOfVerses} ayat)</span>
+          <span className="ml-1">
+            ({surah.numberOfVerses} {t('t.verse')})
+          </span>
         </div>
 
         {/* Translation */}
@@ -45,7 +50,7 @@ function Surah({ surah, lang }) {
         <div className="tafsir text-gray-500">
           <span>{tafsir.substr(0, 200)}</span>
           {tafsirExceedMax && (
-            <span className="text-gray-800 ml-2">Selengkapnya..</span>
+            <span className="text-gray-800 ml-2">{t('t.see_more')}</span>
           )}
         </div>
       </div>
