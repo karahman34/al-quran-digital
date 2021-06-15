@@ -5,7 +5,7 @@ const resources = {
   en: {
     translation: {
       'home.header.search': 'Find Surah',
-      'c.search.placeholder': 'Insert surah name..',
+      'c.search.placeholder': 'Insert surah name or tafsir..',
       't.see_more': 'See More..',
       't.verse': 'verses',
     },
@@ -13,7 +13,7 @@ const resources = {
   id: {
     translation: {
       'home.header.search': 'Cari Surat',
-      'c.search.placeholder': 'Masukan nama surat..',
+      'c.search.placeholder': 'Masukan nama surat atau tafsir..',
       't.see_more': 'Selengkapnya..',
       't.verse': 'ayat',
     },
