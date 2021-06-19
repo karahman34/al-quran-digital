@@ -48,7 +48,7 @@ function Surah({ surah, lang }) {
         {/* Tafsir */}
         <div className="mt-2">Tafsir: </div>
         <div className="tafsir text-gray-500">
-          <span>{tafsir.substr(0, 200)}</span>
+          <span>{tafsir.substr(0, 200)}..</span>
           {tafsirExceedMax && (
             <span className="text-gray-800 ml-2">{t('t.see_more')}</span>
           )}
@@ -59,8 +59,8 @@ function Surah({ surah, lang }) {
 }
 
 Surah.propTypes = {
-  surah: PropTypes.object.isRequired,
   lang: PropTypes.string.isRequired,
+  surah: PropTypes.object.isRequired,
 }
 
 export default connect(mapStateToProps)(Surah)
