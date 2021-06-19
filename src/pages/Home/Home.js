@@ -1,16 +1,33 @@
+import { useState } from 'react'
 import { connect } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
 import Search from 'components/Search/Search'
-import Surah from 'components/Surah/Surah'
+import ListSurah from 'components/ListSurah/ListSurah'
+import { filterSurah } from 'store/modules/main/getter'
 
 const mapStateToProps = (state) => ({
   list: state.main.list,
   lang: state.global.lang,
+  filterSurah: (q) => filterSurah(state)(q),
 })
 
-function Home({ list }) {
+function Home({ list, filterSurah }) {
   const { t } = useTranslation()
+
+  const [listSurah, setListSurah] = useState(list)
+
+  function onSearch(e) {
+    const q = e.target.value
+
+    if (q.length < 1) {
+      setListSurah(list)
+    } else {
+      const filteredSurah = filterSurah(q)
+
+      setListSurah(filteredSurah)
+    }
+  }
 
   return (
     <div>
@@ -20,20 +37,17 @@ function Home({ list }) {
       </p>
 
       {/* Search */}
-      <Search />
+      <Search onSearch={onSearch} />
 
       {/* List Surah */}
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {list.map((surah) => (
-          <Surah key={surah.number} surah={surah} />
-        ))}
-      </div>
+      <ListSurah list={listSurah}></ListSurah>
     </div>
   )
 }
 
 Home.propTypes = {
   list: PropTypes.array.isRequired,
+  filterSurah: PropTypes.func.isRequired,
 }
 
 export default connect(mapStateToProps)(Home)

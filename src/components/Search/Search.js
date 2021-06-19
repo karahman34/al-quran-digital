@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
+import PropTypes from 'prop-types'
 
-function Search() {
+function Search({ onSearch }) {
   const { t } = useTranslation()
 
   return (
@@ -13,9 +14,14 @@ function Search() {
         type="text"
         className="px-3 pl-10 py-2 w-full md:text-lg rounded-md focus:outline-none focus:ring focus:ring-green-500 transition-all"
         placeholder={t('c.search.placeholder')}
+        onChange={onSearch}
       />
     </div>
   )
+}
+
+Search.propTypes = {
+  onSearch: PropTypes.func,
 }
 
 export default Search

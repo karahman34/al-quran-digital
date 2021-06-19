@@ -8,6 +8,7 @@ const resources = {
       'c.search.placeholder': 'Insert surah name or tafsir..',
       't.see_more': 'See More',
       't.verse': 'verses',
+      'list.not_found': "Sorry we can't find anything..",
     },
   },
   id: {
@@ -16,6 +17,7 @@ const resources = {
       'c.search.placeholder': 'Masukan nama surat atau tafsir..',
       't.see_more': 'Selengkapnya',
       't.verse': 'ayat',
+      'list.not_found': 'Maaf kami tidak bisa menemukan apapun..',
     },
   },
 }
