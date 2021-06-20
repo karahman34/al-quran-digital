@@ -20,7 +20,11 @@ function Surah({ surah, lang }) {
   })
 
   return (
-    <Link to="#">
+    <Link
+      to={`/surah/${surah.number}/${surah.name.transliteration[lang]
+        .toLowerCase()
+        .replace(/[^a-zA-Z-]/g, '')}`}
+    >
       <div className="relative p-4 bg-white rounded-2xl transition-all hover:border-2 hover:border-green-400">
         {/* Number */}
         <div className="h-8 w-8 rounded-full text-white bg-green-400 number absolute -top-3 -left-2 flex justify-center items-center font-font-bold">

@@ -25,3 +25,18 @@ export const fetchQuran = () => {
     }
   }
 }
+
+export const fetchSurah = (number) => {
+  return async (dispatch) => {
+    try {
+      const res = await quranApi.surah(number)
+      const { data } = res
+
+      dispatch(setSurah(data.data))
+
+      return Promise.resolve(res)
+    } catch (err) {
+      return Promise.reject(err)
+    }
+  }
+}

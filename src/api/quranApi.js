@@ -6,11 +6,11 @@ const quranApi = {
   list() {
     return axios.get(`${baseURL}/surah`)
   },
-  surah(surah) {
-    return axios.get(`${baseURL}/${surah}`)
+  surah(number) {
+    return axios.get(`${baseURL}/surah/${number}`)
   },
-  ayat(surah, ayat) {
-    return axios.get(`${baseURL}/${surah}/${ayat}`)
+  ayat(number, ayat) {
+    return axios.get(`${baseURL}/surah/${number}/${ayat}`)
   },
 }
 

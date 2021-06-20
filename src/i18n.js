@@ -9,6 +9,8 @@ const resources = {
       't.see_more': 'See More',
       't.verse': 'verses',
       'list.not_found': "Sorry we can't find anything..",
+      hide_tafsir: 'Hide Tafsir',
+      show_tafsir: 'Show Tafsir',
     },
   },
   id: {
@@ -18,6 +20,8 @@ const resources = {
       't.see_more': 'Selengkapnya',
       't.verse': 'ayat',
       'list.not_found': 'Maaf kami tidak bisa menemukan apapun..',
+      hide_tafsir: 'Tutup Tafsir',
+      show_tafsir: 'Tampilkan Tafsir',
     },
   },
 }

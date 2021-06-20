@@ -1,3 +1,5 @@
+export const findSurahByNumber = (state) => (number) => state.main.surah[number]
+
 export const filterSurah = (state) => (q) =>
   state.main.list.filter((surah) => {
     const { translation, transliteration } = surah.name
