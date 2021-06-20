@@ -84,7 +84,9 @@ function Verse({ verse, lang }) {
             tafsirOpened ? 'mb-3' : 'mb-0'
           } tafsir text-gray-500 italic px-4`}
         >
-          {verse.tafsir['id'].short}
+          {verse.tafsir[lang]
+            ? verse.tafsir[lang].short
+            : verse.tafsir['id'].short}
         </div>
       </div>
     </div>
