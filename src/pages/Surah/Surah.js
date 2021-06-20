@@ -60,6 +60,9 @@ function Surah({ lang, findSurahByNumber, fetchSurah }) {
     )
   }
 
+  // Set title
+  document.title = surah.name.transliteration[lang]
+
   return (
     <div className="mx-auto lg:4/5 xl:w-3/5">
       {/* Surah */}

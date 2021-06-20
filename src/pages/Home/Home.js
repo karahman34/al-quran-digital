@@ -29,6 +29,8 @@ function Home({ list, filterSurah }) {
     }
   }
 
+  document.title = 'Al-Quran Digital'
+
   return (
     <div>
       <p className="mb-1 md:mb-4 text-2xl md:text-3xl lg:text-4xl text-green-800 text-center">
