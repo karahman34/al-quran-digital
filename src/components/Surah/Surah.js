@@ -26,14 +26,16 @@ function Surah({ surah, lang }) {
         .replace(/[^a-zA-Z-]/g, '')}`}
     >
       <div className="relative p-4 bg-white rounded-2xl transition-all hover:border-2 hover:border-green-400">
-        {/* Number */}
-        <div className="float-left h-8 w-8 rounded-full text-white bg-green-400 number flex justify-center items-center font-bold">
-          {surah.number}
-        </div>
+        <div className="flex justify-between items-center">
+          {/* Number */}
+          <div className="float-left h-8 w-8 rounded-full text-white bg-green-400 number flex justify-center items-center font-bold">
+            {surah.number}
+          </div>
 
-        {/* Name in arab */}
-        <div className="name-arab text-right text-arab text-4xl">
-          {surah.name.short}
+          {/* Name in arab */}
+          <div className="name-arab text-right text-arab text-4xl">
+            {surah.name.short}
+          </div>
         </div>
 
         {/* Transliteration */}
