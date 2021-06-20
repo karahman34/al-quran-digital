@@ -8,10 +8,12 @@ function App() {
     <Router>
       <div className="App bg-green-50 pb-10 w-full min-h-screen">
         <section className="container mx-auto px-3 md:px-0">
-          {/* Header */}
-          <Header />
-
+          {/* Tasks */}
           <Tasks>
+            {/* Header */}
+            <Header />
+
+            {/* Routes */}
             <Switch>
               {routes.map((route, index) => (
                 <Route

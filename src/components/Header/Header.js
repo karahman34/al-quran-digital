@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { setLang } from 'store/modules/global/actions'
@@ -23,13 +23,18 @@ function Header({ lang, setLang }) {
 
     // Change lang state.
     setLang(newLang)
+  })
 
+  useEffect(() => {
     // Change lang local input.
-    setSelectedLang(newLang)
+    setSelectedLang(lang)
 
     // Change lang in i18n.
-    i18n.changeLanguage(newLang)
-  })
+    i18n.changeLanguage(lang)
+
+    // Set lang in local storage.
+    localStorage.setItem('lang', lang)
+  }, [lang])
 
   return (
     <div className="py-3 mb-5 flex justify-between">
@@ -44,8 +49,8 @@ function Header({ lang, setLang }) {
         onChange={langChangeHandler}
         value={selectedLang}
       >
-        <option value="id">Indonesia</option>
         <option value="en">English</option>
+        <option value="id">Indonesia</option>
       </select>
     </div>
   )
