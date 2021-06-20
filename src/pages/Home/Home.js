@@ -36,7 +36,7 @@ function Home({ list, filterSurah }) {
 
   return (
     <div>
-      <p className="mb-1 md:mb-4 text-2xl md:text-3xl lg:text-4xl text-green-800 text-center">
+      <p className="mb-1 md:mb-4 text-2xl md:text-3xl lg:text-4xl text-green-700 text-center">
         <i className="mdi mdi-magnify mr-2"></i>
         {t('home.header.search')}
       </p>

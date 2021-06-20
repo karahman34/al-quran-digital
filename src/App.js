@@ -16,12 +16,13 @@ function App() {
   return (
     <Router basename={baseURL}>
       <div className="App bg-green-50 pb-10 w-full min-h-screen">
-        <section className="container mx-auto px-3 md:px-0">
-          {/* Tasks */}
-          <Tasks>
-            {/* Header */}
-            <Header />
+        {/* Tasks */}
+        <Tasks>
+          {/* Header */}
+          <Header />
 
+          {/* Content */}
+          <section className="container mx-auto px-3 md:px-0">
             {/* Routes */}
             <Switch>
               {routes.map((route, index) => (
@@ -33,8 +34,8 @@ function App() {
                 ></Route>
               ))}
             </Switch>
-          </Tasks>
-        </section>
+          </section>
+        </Tasks>
       </div>
     </Router>
   )
