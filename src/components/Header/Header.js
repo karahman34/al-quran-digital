@@ -40,7 +40,7 @@ function Header({ lang, setLang }) {
 
       {/* Lang */}
       <select
-        className="bg-white py-2 px-3 rounded-md focus:outline-none focus:ring focus:ring-green-500 hover:cursor-pointer transition-all"
+        className="bg-white py-2 px-3 rounded-md focus:outline-none focus:ring focus:ring-green-500 cursor-pointer transition-all"
         onChange={langChangeHandler}
         value={selectedLang}
       >
