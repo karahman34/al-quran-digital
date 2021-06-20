@@ -104,7 +104,7 @@ function Surah({ lang, findSurahByNumber, fetchSurah }) {
       </div>
 
       {/* List of verse */}
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col space-y-5">
         {surah.verses.map((verse, index) => (
           <Verse key={index} verse={verse} />
         ))}
