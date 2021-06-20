@@ -27,26 +27,29 @@ function Surah({ surah, lang }) {
     >
       <div className="relative p-4 bg-white rounded-2xl transition-all hover:border-2 hover:border-green-400">
         {/* Number */}
-        <div className="h-8 w-8 rounded-full text-white bg-green-400 number absolute -top-3 -left-2 flex justify-center items-center font-font-bold">
+        <div className="float-left h-8 w-8 rounded-full text-white bg-green-400 number flex justify-center items-center font-bold">
           {surah.number}
         </div>
 
         {/* Name in arab */}
-        <div className="name-arab text-3xl mb-3">{surah.name.short}</div>
+        <div className="name-arab text-right text-arab text-4xl">
+          {surah.name.short}
+        </div>
 
-        {/* Name in transliteration */}
-        <p>Transliteration: </p>
-        <div className="name mr-2 text-gray-500">
-          <span>{surah.name.transliteration[lang]}</span>
-          <span className="ml-1">
-            ({surah.numberOfVerses} {t('t.verse')})
-          </span>
+        {/* Transliteration */}
+        <div className="name text-gray-700 text-right text-lg">
+          {surah.name.transliteration[lang]}
+        </div>
+
+        {/* Verses */}
+        <div className="text-gray-500 ml-1 text-right">
+          ({surah.numberOfVerses} {t('t.verse')})
         </div>
 
         {/* Translation */}
-        <p className="mt-2">Translation: </p>
+        <p className="mt-1">Translation: </p>
         <div className="translation text-gray-500">
-          {surah.name.translation[lang]}
+          <span>{surah.name.translation[lang]}</span>
         </div>
 
         {/* Tafsir */}
