@@ -57,32 +57,35 @@ function Verse({ verse, lang }) {
         </audio>
       </div>
 
-      {/* Tafsir Toggle */}
-      <div
-        className="mt-4 py-2 px-4 flex justify-between items-center border-t border-gray-200 cursor-pointer hover:bg-gray-200 transition-colors"
-        onClick={toggleTafsir}
-      >
-        {/* Text */}
-        <span className="text-gray-700">
-          {tafsirOpened ? t('hide_tafsir') : t('show_tafsir')}
-        </span>
-
-        {/* Icon */}
-        <i
-          className={`mdi mdi-${
-            tafsirOpened ? 'chevron-down' : 'chevron-up'
-          } text-xl`}
-        ></i>
-      </div>
-
       {/* Tafsir */}
-      <div
-        ref={tafsirEl}
-        className={`${VerseStyles.tafsir} ${
-          tafsirOpened ? 'mb-4' : 'mb-0'
-        } tafsir text-gray-500 italic px-4`}
-      >
-        {verse.tafsir['id'].short}
+      <div className="mt-4 border-t overflow-hidden rounded-b-xl">
+        {/* Toggle */}
+        <div
+          className="py-2 px-4 flex justify-between items-center border-gray-200 cursor-pointer hover:bg-gray-200 transition-colors"
+          onClick={toggleTafsir}
+        >
+          {/* Text */}
+          <span className="text-gray-700">
+            {tafsirOpened ? t('hide_tafsir') : t('show_tafsir')}
+          </span>
+
+          {/* Icon */}
+          <i
+            className={`mdi mdi-${
+              tafsirOpened ? 'chevron-down' : 'chevron-up'
+            } text-xl`}
+          ></i>
+        </div>
+
+        {/* Text */}
+        <div
+          ref={tafsirEl}
+          className={`${VerseStyles.tafsir} ${
+            tafsirOpened ? 'mb-3' : 'mb-0'
+          } tafsir text-gray-500 italic px-4`}
+        >
+          {verse.tafsir['id'].short}
+        </div>
       </div>
     </div>
   )
