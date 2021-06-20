@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/al-quran-digital/static/css/main.2867edcb.chunk.css",
-    "main.js": "/al-quran-digital/static/js/main.f8003690.chunk.js",
-    "main.js.map": "/al-quran-digital/static/js/main.f8003690.chunk.js.map",
+    "main.js": "/al-quran-digital/static/js/main.c5526ada.chunk.js",
+    "main.js.map": "/al-quran-digital/static/js/main.c5526ada.chunk.js.map",
     "runtime-main.js": "/al-quran-digital/static/js/runtime-main.662e7e1c.js",
     "runtime-main.js.map": "/al-quran-digital/static/js/runtime-main.662e7e1c.js.map",
     "static/css/2.962593d1.chunk.css": "/al-quran-digital/static/css/2.962593d1.chunk.css",
-    "static/js/2.dad4c1cc.chunk.js": "/al-quran-digital/static/js/2.dad4c1cc.chunk.js",
-    "static/js/2.dad4c1cc.chunk.js.map": "/al-quran-digital/static/js/2.dad4c1cc.chunk.js.map",
+    "static/js/2.746494c2.chunk.js": "/al-quran-digital/static/js/2.746494c2.chunk.js",
+    "static/js/2.746494c2.chunk.js.map": "/al-quran-digital/static/js/2.746494c2.chunk.js.map",
     "static/js/3.8078a4d1.chunk.js": "/al-quran-digital/static/js/3.8078a4d1.chunk.js",
     "static/js/3.8078a4d1.chunk.js.map": "/al-quran-digital/static/js/3.8078a4d1.chunk.js.map",
     "index.html": "/al-quran-digital/index.html",
     "static/css/2.962593d1.chunk.css.map": "/al-quran-digital/static/css/2.962593d1.chunk.css.map",
     "static/css/main.2867edcb.chunk.css.map": "/al-quran-digital/static/css/main.2867edcb.chunk.css.map",
-    "static/js/2.dad4c1cc.chunk.js.LICENSE.txt": "/al-quran-digital/static/js/2.dad4c1cc.chunk.js.LICENSE.txt",
+    "static/js/2.746494c2.chunk.js.LICENSE.txt": "/al-quran-digital/static/js/2.746494c2.chunk.js.LICENSE.txt",
     "static/media/materialdesignicons.min.css": "/al-quran-digital/static/media/materialdesignicons-webfont.e9db4005.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.662e7e1c.js",
     "static/css/2.962593d1.chunk.css",
-    "static/js/2.dad4c1cc.chunk.js",
+    "static/js/2.746494c2.chunk.js",
     "static/css/main.2867edcb.chunk.css",
-    "static/js/main.f8003690.chunk.js"
+    "static/js/main.c5526ada.chunk.js"
   ]
 }
