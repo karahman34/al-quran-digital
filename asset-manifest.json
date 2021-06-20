@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/al-quran-digital/static/css/main.2867edcb.chunk.css",
-    "main.js": "/al-quran-digital/static/js/main.c5526ada.chunk.js",
-    "main.js.map": "/al-quran-digital/static/js/main.c5526ada.chunk.js.map",
+    "main.css": "/al-quran-digital/static/css/main.764f4f5f.chunk.css",
+    "main.js": "/al-quran-digital/static/js/main.2738834b.chunk.js",
+    "main.js.map": "/al-quran-digital/static/js/main.2738834b.chunk.js.map",
     "runtime-main.js": "/al-quran-digital/static/js/runtime-main.662e7e1c.js",
     "runtime-main.js.map": "/al-quran-digital/static/js/runtime-main.662e7e1c.js.map",
     "static/css/2.962593d1.chunk.css": "/al-quran-digital/static/css/2.962593d1.chunk.css",
@@ -12,15 +12,16 @@
     "static/js/3.8078a4d1.chunk.js.map": "/al-quran-digital/static/js/3.8078a4d1.chunk.js.map",
     "index.html": "/al-quran-digital/index.html",
     "static/css/2.962593d1.chunk.css.map": "/al-quran-digital/static/css/2.962593d1.chunk.css.map",
-    "static/css/main.2867edcb.chunk.css.map": "/al-quran-digital/static/css/main.2867edcb.chunk.css.map",
+    "static/css/main.764f4f5f.chunk.css.map": "/al-quran-digital/static/css/main.764f4f5f.chunk.css.map",
     "static/js/2.746494c2.chunk.js.LICENSE.txt": "/al-quran-digital/static/js/2.746494c2.chunk.js.LICENSE.txt",
-    "static/media/materialdesignicons.min.css": "/al-quran-digital/static/media/materialdesignicons-webfont.e9db4005.woff2"
+    "static/media/materialdesignicons.min.css": "/al-quran-digital/static/media/materialdesignicons-webfont.e9db4005.woff2",
+    "static/media/quran.11d1f382.png": "/al-quran-digital/static/media/quran.11d1f382.png"
   },
   "entrypoints": [
     "static/js/runtime-main.662e7e1c.js",
     "static/css/2.962593d1.chunk.css",
     "static/js/2.746494c2.chunk.js",
-    "static/css/main.2867edcb.chunk.css",
-    "static/js/main.c5526ada.chunk.js"
+    "static/css/main.764f4f5f.chunk.css",
+    "static/js/main.2738834b.chunk.js"
   ]
 }
