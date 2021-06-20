@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
@@ -29,7 +29,10 @@ function Home({ list, filterSurah }) {
     }
   }
 
-  document.title = 'Al-Quran Digital'
+  useEffect(() => {
+    // eslint-disable-next-line no-undef
+    document.title = process.env.REACT_APP_TITLE
+  }, [])
 
   return (
     <div>
