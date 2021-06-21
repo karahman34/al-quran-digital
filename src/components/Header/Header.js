@@ -51,7 +51,6 @@ function Header({ lang, setLang }) {
         selectLangEl.current.classList.add('bg-white')
         selectLangEl.current.classList.remove('bg-gray-100')
         selectLangEl.current.classList.remove('shadow-sm')
-        selectLangEl.current.classList.remove('focus:ring-green-500')
       }
     })
   })
@@ -93,7 +92,7 @@ function Header({ lang, setLang }) {
 
         {/* Lang */}
         <select
-          className="bg-white py-2 px-3 rounded-md focus:outline-none focus:ring focus:ring-green-400 cursor-pointer transition-all"
+          className="bg-white py-2 px-3 rounded-md focus:outline-none cursor-pointer transition-all hover:bg-gray-200"
           ref={selectLangEl}
           onChange={langChangeHandler}
           value={selectedLang}
