@@ -22,7 +22,7 @@ function App() {
           <Header />
 
           {/* Content */}
-          <section className="container mx-auto px-3 md:px-0">
+          <section className="container mx-auto px-5">
             {/* Routes */}
             <Switch>
               {routes.map((route, index) => (
