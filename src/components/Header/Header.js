@@ -77,7 +77,7 @@ function Header({ lang, setLang }) {
       className="py-2 mb-5 w-full sticky top-0 z-50 transition-all"
     >
       {/* Container */}
-      <div className="mx-auto container flex justify-between items-center px-3 md:px-0">
+      <div className="mx-auto container flex justify-between items-center px-3 md:px-5">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img
